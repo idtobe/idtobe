@@ -10,6 +10,7 @@ body {
     background: url(images/bg.jpg);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
+    color: #ededed;
 }
 
 a {
@@ -88,7 +89,20 @@ a {
 .wrapper {
     height: 100%;
     margin-left: 245px;
-    padding: 20vh 10vw 0;
+    padding: 20vh 5vw 0;
+}
+
+.subtopics {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.toolClass {
+    height: 40px;
+}
+
+.certImg {
+    height: 80px;
 }
 
 /*
@@ -127,10 +141,7 @@ a {
     margin: 0 auto;
 }
 
-.subtopics {
-    font-weight: 600;
-    height: 40px;
-}
+
 
 
 
@@ -181,13 +192,9 @@ i, a {
 
 
 
-.toolClass {
-    margin-left: 3rem;
-}
 
-.certImg {
-    height: 80px;
-}
+
+
 
 .imggrid {;
     top: 20vh;
