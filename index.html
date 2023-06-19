@@ -19,72 +19,113 @@
     <title>Roberto Reyes</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md fixed-top px-5">
+    <nav class="navbar navbar-expand-md sticky-top px-3 bg-body">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Roberto Reyes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse navbar-right" id="navbarMain">
-                <ul class="navbar-nav m-0 p-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-4" aria-current="work" href="work.html">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-4" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+          <a class="navbar-brand" href="index.html">Roberto Reyes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-right" id="navbarMain">
+            <ul class="navbar-nav m-0 p-0">
+              <li class="nav-item">
+                <a class="nav-link me-4" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown me-4">
+                  <a class="nav-link dropdown-toggle" href="work.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Work
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="archviz.html">Archviz</a></li>
+                        <li><a class="dropdown-item" href="env.html">Environments</a></li>
+                        <li><a class="dropdown-item" href="id.html">Product Shots</a></li>
+                        <li><a class="dropdown-item" href="abstract.html">Abstract</a></li>
+                        <li><a class="dropdown-item" href="anim.html">Animations</a></li>
+                        <li><a class="dropdown-item" href="xr.html">XR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section class="wrapper mt-3 mb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center mb-4 p-0">
+                    <ul class="d-inline-flex justify-content-between">
+                        <li class="links-items d-inline px-4"><a href="archviz.html">Archviz</a></li>
+                        <li class="links-items d-inline px-4"><a href="env.html">Environments</a></li>
+                        <li class="links-items d-inline px-4"><a href="id.html">Product Shots</a></li>
+                        <li class="links-items d-inline px-4"><a href="abstract.html">Abstract</a></li>
+                        <li class="links-items d-inline px-4"><a href="anim.html">Animations</a></li>
+                        <li class="links-items d-inline px-4"><a href="xr.html">XR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="row g-2 mb-2">
+                        <div class="col-md-4">
+                            <img src="images/archviz01.jpg" alt="archviz image of a bathroom" class="img-fluid img-Port">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/env_01.jpg" alt="3D image of a forest" class="img-fluid img-Port">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/id_01.jpg" alt="3D image of a vinyl LP" class="img-fluid img-Port">
+                        </div>
+                    </div>
+                    <div class="row g-2 mb-2">
+                        <div class="col-md-4">
+                            <img src="images/abs_01.jpg" alt="3D image of a head made of dust" class="img-fluid img-Port">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/anim_01.jpg" alt="3D image of a grass plane" class="img-fluid img-Port">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/abs_02.jpg" alt="3D image of a lugagge" class="img-fluid img-Port">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
             </div>
         </div>
-    </nav>
-    
-    <!-- Sidebar Background -->
-    <div class="sidebar-bg"></div>
+    </section>
 
-    <!-- Sidebar -->
-    <div class="container gx-0 sidebar-nav position-fixed">
-        <div class="d-flex justify-content-start align-items-center sidebar">
-            <!-- <ul class="links-list">
-                <li class="links-items d-flex"><a href="#">Archviz</a></li>
-                <li class="links-items d-flex ms-0 p-0"><a href="#">Product Shots</a></li>
-                <li class="links-items d-flex ms-0 p-0"><a href="#">Animations</a></li>
-                <li class="links-items d-flex ms-0 p-0"><a href="#">Product Design</a></li>
-                <li class="links-items d-flex ms-0 p-0"><a href="#">Personal Projects</a></li>
-            </ul> -->
-        </div>
-        <div class="row sidebar p-0 gx-0">
-            <div class="some">
-                <ul class="links-list d-flex justify-content-between">
-                    <li class="d-inline">
-                        <a href="https://www.artstation.com/idtobe" target="_blank"><i class="fa-brands fa-artstation some-icons"></i></a>
-                    </li>
-                    <li class="d-inline">
-                        <a href="https://www.behance.net/RobertoRP" target="_blank"><i class="fa-brands fa-behance some-icons"></i></a>
-                    </li>
-                    <li class="d-inline">
-                        <a href="https://www.instagram.com/otrebor_rp/" target="_blank"><i class="fa-brands fa-instagram some-icons"></i></a>
-                    </li>
-                    <li class="d-inline">
-                        <a href="https://www.linkedin.com/in/robrp/" target="_blank"><i class="fa-brands fa-linkedin some-icons"></i></a>
-                    </li>
-                    <li class="d-inline">
-                        <a href="https://vimeo.com/idtobe" target="_blank"><i class="fa-brands fa-vimeo-v some-icons"></i></a>
-                    </li>
-                </ul>
+<!-- Footer -->
+<div class="container footer fixed-bottom">
+    <footer>
+      <!-- Copyright -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-center text-md-start my-2">
+                    <a href="https://www.linkedin.com/in/robrp/" target="_blank" class="pe-3">
+                        <i class="fa-brands fa-linkedin some-icons"></i>
+                    </a>
+                    <a href="https://www.artstation.com/idtobe" target="_blank" class="px-3">
+                        <i class="fa-brands fa-artstation some-icons"></i>
+                    </a>
+                    <a href="https://www.behance.net/RobertoRP" target="_blank" class="px-3">
+                        <i class="fa-brands fa-behance some-icons"></i>
+                    </a>
+                    <a href="https://www.instagram.com/otrebor_rp/" target="_blank" class="px-3">
+                        <i class="fa-brands fa-instagram some-icons"></i>
+                    </a>
+                    <a href="https://vimeo.com/idtobe" target="_blank" class="ps-3">
+                        <i class="fa-brands fa-vimeo-v some-icons"></i>
+                    </a>
+                </div>
+                <div class="col-md-4 text-end my-auto">
+                    © 2023 Copyright
+                </div>
             </div>
-        </div>
-    </div>
-
-<!-- Main content -->
-    <div class="wrapper">
-        <div class="main">
-            
-        </div>
-    </div>
-
+        </div>            
+    </footer>
+  </div>
 
 
     <!-- Fontawesome JS -->
