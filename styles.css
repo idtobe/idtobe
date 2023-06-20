@@ -51,6 +51,11 @@ li, a {
     object-fit: cover;
 }
 
+.imgGallery {
+    max-height: 60vh;
+    width: 100%;
+}
+
 .caption {
     margin: 0;
     padding: 0;
