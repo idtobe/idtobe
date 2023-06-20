@@ -14,7 +14,7 @@ body {
     min-height: 100%;
 }
 
-a {
+li, a {
     text-decoration: none;
 }
 
@@ -43,17 +43,6 @@ a {
     border-radius: 5px;
     box-shadow: 0 0px 5px rgba(255, 255, 255, 0.2);
     z-index: -1;
-}
-
-.links-items {
-    margin: 0;
-    padding: 0;
-    display: inline;
-    margin-bottom: 1rem;
-}
-
-.links-items:last-child {
-    margin: 0;
 }*/
 
 .links-items a {
@@ -63,6 +52,8 @@ a {
 
 .wrapper {
     height: 100%;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .img-Port {
@@ -97,6 +88,10 @@ a {
 
 .tools-text {
     font-size: .8rem;
+}
+
+.tools-text ul {
+    list-style-type: none;
 }
 
 .cert-text {
