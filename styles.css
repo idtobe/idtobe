@@ -40,7 +40,7 @@ li, a {
 }
 
 .wrapper {
-    min-height: 80vh;
+    min-height: 75vh;
     margin-top: 5px;
     margin-bottom: 60px;
 }
@@ -121,3 +121,48 @@ li, a {
     width: 70vw;
     font-size: 0.75rem;
 }
+
+  /* LIGHTBOX STYLES 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .lightbox-modal .modal-content {
+    background: none;
+    border: none;
+  }
+
+  /*.lightbox-modal .btn-close {
+    top: -10px;
+    left: -10px;
+    font-size: 1.2rem;
+    z-index: 10;
+  }*/
+
+  .lightbox-modal .modal-body {
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .lightbox-modal img {
+    width: auto;
+    max-height: 90vh;
+    max-width: 100%;
+  }
+  
+  .lightbox-modal .carousel-control-prev,
+  .lightbox-modal .carousel-control-next {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    width: auto;
+  }
+
+  .lightbox-modal .carousel-control-prev {
+    left: -30px;
+  }
+
+  .lightbox-modal .carousel-control-next {
+    right: -30px;
+  }
