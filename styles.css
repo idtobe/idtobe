@@ -5,46 +5,121 @@
 }
 
 html {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: black;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #eceff1;
+    background-color: #373737;
 }
 
+.navbar {
+    z-index: 99;
+}
+
+.navbar-toggler-icon {
+    color: #eceff1 !important;
+}
+
+.navbar, .navbar-brand, .navbar-right, .nav-link {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+    color: #eceff1 !important;
+}
+
+.flexCols {
+    min-height: calc(100vh / 4);
+    max-width: 100vw;
+    background-size: cover;
+    position: relative;
+}
+
+.archviz {
+    background-image: url(images/archviz_01.jpg);
+    background-position: 45%;
+    background-size: cover;
+}
+
+.prod {
+    background-image: url(images/id_03.jpg);
+    background-position: 50%;
+    background-size: cover;
+}
+
+.env {
+    background-image: url(images/env_01.jpg);
+    background-position: 50%;
+    background-size: cover;
+}
+
+.diverse {
+    background-image: url(images/abs_03.jpg);
+    background-position: 47%;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    top: 89%;
+    color: #eceff1;
+    font-size: 1.5rem;
+}
+
+.caption ul {
+    font-family: 'Assistant', serif;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .caption {
+        position: absolute;
+        top: 62%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .navbar a {
-    font-size: .95rem;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
 }
 
 .menu {
+    font-family: 'Rubik', sans-serif;
     margin-top: 1vh;
     height: 4vh;
 }
 
-.gallery {
-    min-height: 70vh;
-    max-height: 100%;
-    max-width: 80vw;
+.homeMenu {
+    height: 100vh;
+    padding: 0;
 }
 
 .img-fluid {
     object-fit: cover;
 }
 
-.caption {
-    margin: 0;
-    padding: 0;
-    padding-left: 6px;
-    padding-right: 6px;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #ededed;
-    font-weight: 600;
-}
 
 h4 {
-    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
 }
 
 li, a {
@@ -66,7 +141,7 @@ li, a {
 }
 
 .cat a {
-    font-size: 0.8rem;
+    /*font-size: 0.8rem;*/
     color: black;
 }
 
@@ -90,8 +165,13 @@ li, a {
 }
 
 .tools-text {
-    font-size: 0.8rem;
-    line-height: 2;
+    line-height: 1.6;
+    font-family: "Assistant", sans-serif;
+}
+
+.mainAb {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .tools-text ul {
@@ -114,3 +194,4 @@ li, a {
     width: 75vw;
     font-size: 0.75rem;
 }
+

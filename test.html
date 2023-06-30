@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="apps.css">
+
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav id="seethrough" class="navbar is-fixed-top is-transparent">
+      <div id="seethrough" class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <p class="is-size-5 is-size-4-desktop pl-3">Roberto Reyes</p>
+        </a>
+        <div id="navBurger" class="navbar-burger navbar-end" data-target="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="navMenu" class="navbar-menu is-pulled-right p-0">
+        <div class="navbar-end pr-3 ">
+          <a class="navbar-item burgerLink">
+            <p class="is-size-6 is-size-5-desktop p-0">About</p>
+          </a>
+          <div class="navbar-item has-dropdown p-0 is-hoverable">
+            <a class="navbar-link is-arrowless burgerLink">
+              <p class="is-size-6 is-size-5-desktop p-0">Work</p>
+            </a>
+            <div class="navbar-dropdown is-narrow is-right p-0">
+              <a class="dropP navbar-item mb-1 py-1 px-2" href="archviz2.html">
+                <p class=" is-size-7 is-size-6-desktop">Archviz</p>
+              </a>
+              <a class="dropP navbar-item mb-1 py-1 px-2" href="id.html">
+                <p class=" is-size-7 is-size-6-desktop">Product Shots</p>
+              </a>
+              <a class="dropP navbar-item mb-1 py-1 px-2" href="env.html">
+                <p class=" is-size-7 is-size-6-desktop">Environments</p>
+              </a>
+              <a class="dropP navbar-item mb-1 px-1" href="abstract.html">
+                <p class=" is-size-7 is-size-6-desktop">Diverse</p>
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item burgerLink">
+            <p class=" is-size-6 is-size-5-desktop p-0">Contact</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- homeMenu -->
+    <section>      
+      <div class="columns is-desktop m-0 homeMenu">
+        <a class="startCat column archviz" href="archviz2.html">
+          <div class="firstLinks p-3">
+            <p class=" is-size-5 is-size-4-desktop">Archviz</p>
+            <ul>
+              <li>Images and animations</li>
+            </ul>
+          </div>
+        </a>
+        <a class="startCat column prod" href="id.html">
+          <div class="firstLinks p-3">
+            <p class=" is-size-5 is-size-4-desktop">Product shots</p>
+            <ul>
+              <li>Images, animations and AR
+            </ul>
+          </div>
+        </a>
+        <a class="startCat column env" href="env.html">
+          <div class="firstLinks p-3">
+            <p class=" is-size-5 is-size-4-desktop">Environments</p>
+            <ul>
+              <li>Images and animations</li>
+            </ul>
+          </div>
+        </a>
+        <a class="startCat column diverse" href="abstract.html">
+          <div class="firstLinks p-3">
+            <p class=" is-size-5 is-size-4-desktop">Diverse</p>
+            <ul>
+              <li>Images, graphics, animations, XR</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- Custom JS -->
+    <script>
+      let menuHam = document.querySelector("#navBurger");
+      let mainMenu = document.querySelector("#navMenu");
+
+      menuHam.addEventListener("click", () => {
+        menuHam.classList.toggle("is-active");
+        mainMenu.classList.toggle("is-active");
+      })
+    </script>
+
+  </body>
+</html>
