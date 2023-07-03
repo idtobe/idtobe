@@ -4,46 +4,56 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: calc(100%);
-    margin: 0;
-    padding: 0;
+html {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 1px;
-    color: #eceff1;
-    background-color: #373737;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    color: #eaeaea;
+    background-color: #121212;
 }
 
 .navbar {
     z-index: 99;
-    background: linear-gradient(#373737, #37373700);
-}
-
-.navbar-toggler-icon {
-    color: #eceff1 !important;
+    background-image: linear-gradient(#12121277, #12121200);
 }
 
 .navbar, .navbar-brand, .navbar-right, .nav-link {
     font-family: 'Rubik', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500 !important;
     letter-spacing: 1px;
-    color: #eceff1 !important;
+    color: #eaeaea !important;
+}
+
+.navbar-right {
+    justify-content: flex-end;
+}
+
+.dropdown-menu a {
+    font-size: 0.8rem;
+    color: #75706f;
+}
+
+.dropdown-menu a:hover {
+    color: #121212;
+}
+
+.homeMenu {
+    height: calc(100vh);
+    padding: 0;
 }
 
 .flexCols {
-    min-height: calc(100% / 4);
+    min-height: calc(100vh / 4);
     max-width: 100vw;
     background-size: cover;
     position: relative;
@@ -75,23 +85,21 @@ body {
 
 .caption {
     position: absolute;
-    top: 90vh;
-    color: #eceff1;
-    font-size: 1.5rem;
+    top: 92%;
+    color: #eaeaea;
+    font-size: 1.2rem;
 }
+
 
 @media screen and (max-width: 991px) {
     .caption {
         position: absolute;
-        top: 75%;
-        font-size: 1.3rem;
-        color: #373737;
+        top: 80%;
     }
 }
 
-.scrollDiv {
-    width: 50%;
-    overflow-y: auto !important;
+.img-fluid {
+    object-fit: cover;
 }
 
 
@@ -100,9 +108,13 @@ body {
 
 
 
+
+
+/*
 .navbar a {
     font-family: 'Rubik', sans-serif;
     line-height: 1;
+    font-weight: 600;
 }
 
 .menu {
@@ -111,14 +123,13 @@ body {
     height: 4vh;
 }
 
-.homeMenu {
-    height: 100vh;
-    padding: 0;
-}
+*/
 
-.img-fluid {
-    object-fit: cover;
-}
+
+
+
+
+
 
 
 h4 {
@@ -130,18 +141,7 @@ li, a {
     list-style: none;
 }
 
-.navbar a {
-    font-weight: 600;
-}
 
-.navbar-right {
-    justify-content: flex-end;
-}
-
-.dropdown-menu a {
-    font-size: 0.8rem;
-    color: rgba(0, 0, 0, 0.5);
-}
 
 .cat a {
     /*font-size: 0.8rem;*/
@@ -150,12 +150,11 @@ li, a {
 
 .some-icons {
     font-size: 1.2rem;
-    color: black;
+    color: #eaeaea;
     transition: transform 0.4s;
 }
 
 .some-icons:hover {
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     transform: scale(1.35);
 }
 
@@ -194,6 +193,12 @@ li, a {
 }
 
 .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 75vw;
     font-size: 0.75rem;
 }
