@@ -4,21 +4,21 @@
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
-    width: 100%;
-}
-
 html {
-    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     scroll-behavior: smooth;
 }
 
 body {
+    flex-grow: 1;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 1px;
     color: #eaeaea;
     background-color: #121212;
+    overflow: hidden;
 }
 
 .navbar {
