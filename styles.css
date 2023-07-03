@@ -13,9 +13,10 @@ html, body {
 
 body {
     font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     letter-spacing: 1px;
-    color: #eaeaea;
-    background-color: #121212;
+    color: #eceff1;
+    background-color: #373737;
 }
 
 .wrapper {
@@ -26,19 +27,19 @@ body {
 
 .navbar {
     z-index: 99;
-    background: linear-gradient(#121212, #12121200);
+    background: linear-gradient(#373737, #37373700);
 }
 
 .navbar-toggler-icon {
-    color: #eaeaea !important;
+    color: #eceff1 !important;
 }
 
 .navbar, .navbar-brand, .navbar-right, .nav-link {
     font-family: 'Rubik', sans-serif;
-    font-size: calc(0.8rem * 1vw);
-    font-weight: 300 !important;
+    font-size: 1.2rem;
+    font-weight: 500 !important;
     letter-spacing: 1px;
-    color: #eaeaea !important;
+    color: #eceff1 !important;
 }
 
 .flexCols {
@@ -75,8 +76,8 @@ body {
 .caption {
     position: absolute;
     top: 90vh;
-    color: #eaeaea;
-    font-size: calc(0.7rem * 1vw);
+    color: #eceff1;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 991px) {
