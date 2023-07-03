@@ -76,7 +76,7 @@ body {
     font-weight: 500 !important;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .caption {
         position: absolute;
         top: 80%;
