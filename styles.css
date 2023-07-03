@@ -23,6 +23,7 @@ body {
 
 .navbar {
     z-index: 99;
+    background: linear-gradient(#373737, #37373700);
 }
 
 .navbar-toggler-icon {
@@ -70,26 +71,24 @@ body {
 
 .caption {
     position: absolute;
-    top: 89%;
+    top: 90vh;
     color: #eceff1;
     font-size: 1.5rem;
 }
 
-.caption ul {
-    font-family: 'Assistant', serif;
-    font-size: 1rem;
-}
-
-
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
     .caption {
         position: absolute;
-        top: 62%;
+        top: 75%;
+        font-size: 1.3rem;
+        color: #373737;
     }
 }
 
-
-
+.scrollDiv {
+    width: 50%;
+    overflow-y: auto !important;
+}
 
 
 
