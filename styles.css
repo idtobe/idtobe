@@ -72,15 +72,16 @@ body {
     position: absolute;
     top: 90vh;
     color: #eaeaea;
-    font-size: calc(0.7rem * 1vw);
+    font-size: 1.3rem;
+    font-weight: 500 !important;
 }
 
 @media screen and (max-width: 767px) {
     .caption {
         position: absolute;
-        top: 75%;
-        font-size: 1.3rem;
-        color: #373737;
+        top: 80%;
+        font-size: calc(0.9rem * 0.75vw) !important;
+        font-weight: 500 !important;
     }
 }
 
