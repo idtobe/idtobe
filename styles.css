@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    flex-grow: 1;
+    height: 100svh;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 1px;
     color: #eaeaea;
