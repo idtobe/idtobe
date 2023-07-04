@@ -8,10 +8,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Rubik:wght@600&display=swap" rel="stylesheet">
     
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles.css">
@@ -19,106 +19,204 @@
     <title>Roberto Reyes</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md position-absolute w-100 px-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Roberto Reyes - CG Artist</a>
-            <button class="navbar-toggler" type="button" data-bs-theme="dark" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+    <nav class="navbar is-transparent px-5" role="navigation" aria-label="main navigation">
+        <div class="navBrand is-flex is-justify-content-space-between is-align-items-center">
+            <a class="navbar-item pl-0" href="index.html">
+                <img src="images/logoIcon.png" class="has-ratio is-1by1">
+            </a>
+            <button class="button is-ghost is-large is-responsive is-inline" id="burger">
+                <span class="icon is-large">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </span>
             </button>
-            <div class="collapse navbar-collapse navbar-right" id="navbarMain">
-                <ul class="navbar-nav m-0 p-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-2" aria-current="page" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown me-2">
-                        <a class="nav-link dropdown-toggle" href="work.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Work
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item mb-2" href="archviz.html">Archviz</a></li>
-                            <li><a class="dropdown-item mb-2" href="env.html">Environments</a></li>
-                            <li><a class="dropdown-item mb-2" href="id.html">Virtual Photography</a></li>
-                            <li><a class="dropdown-item" href="abstract.html">Abstract</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
-<!-- Gallery -->
-<section class="m-0">
-    <div class="container-fluid h-100 align-content-start d-grid p-0">
-        <div class="row homeMenu justify-content-center p-0">
-            <div class="flexCols col-md-12 col-lg-3 p-0 archviz">
-                <a class="mainMenu" href="archviz.html">
-                    <div class="h-100 caption ps-4">
-                        <p class="m-0">Archviz</p>
-                    </div>
+    <div id="modalMenu" class="modal">
+        <div id="bgClose" class="modal-background"></div>
+        <div class="modal-content has-text-centered">
+            <ul>
+                <li>
+                    <a class="navItem" href="archviz.html">Archviz</a>
+                </li>
+                <li>
+                    <a class="navItem" href="id.html">Product Shots</a>
+                </li>
+                <li>
+                    <a class="navItem" href="env.html">Environments</a>
+                </li>
+                <li>
+                    <a class="navItem" href="abstract.html">Diverse</a>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <a class="navItem" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="navItem" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <button id="closeBtn" class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero is-primary">
+        <div class="hero-body env">
+        </div>
+    </section>
+
+    <!-- Title -->
+    <section class="introTitle is-flex is-align-items-center is-justify-content-center ">
+        <div>
+            <p class="has-text-centered is-size-4-touch is-size-3-desktop">Roberto Reyes - CGI Artist</p>
+            <p class="prof has-text-centered is-size-5">Archviz, Product Shots, Graphics and XR</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <div class="columns is-mobile m-0 p-0 is-multiline">
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="archviz.html">
+                    <img class="gallery" src="images/archviz_01.jpg" alt="">
                 </a>
-            </div>
-            <div class="flexCols col-md-12 col-lg-3 m-0 p-0 prod">
-                <a class="mainMenu" href="id.html">
-                    <div class="h-100 caption m-0 ps-4">
-                        <p class="m-0">Product Shots</p>
-                    </div>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="archviz.html">
+                    <img class="gallery" src="images/archviz_02.jpg" alt="">
                 </a>
-            </div>
-            <div class="flexCols col-md-12 col-lg-3 m-0 p-0 env">
-                <a class="mainMenu" href="env.html">
-                    <div class="h-100 caption m-0 ps-4">
-                        <p class="m-0">Environments</p>
-                    </div>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="archviz.html">
+                    <img class="gallery" src="images/archviz_03.jpg" alt="">
                 </a>
-            </div>
-            <div class="flexCols col-md-12 col-lg-3 m-0 p-0 diverse">
-                <a class="mainMenu" href="abstract.html">
-                    <div class="h-100 caption m-0 ps-4">
-                        <p class="m-0">Diverse</p>
-                    </div>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="id.html">
+                    <img class="gallery" src="images/id_01.jpg" alt="">
                 </a>
-            </div>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="id.html">
+                    <img class="gallery" src="images/id_03.jpg" alt="">
+                </a>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="id.html">
+                    <img class="gallery" src="images/id_07.jpg" alt="">
+                </a>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="env.html">
+                    <img class="gallery" src="images/env_01.jpg" alt="">
+                </a>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="env.html">
+                    <img class="gallery" src="images/env_02.jpg" alt="">
+                </a>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="env.html">
+                    <img class="gallery" src="images/env_03.jpg" alt="">
+                </a>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="abstract.html">
+                    <img class="gallery" src="images/abs_01.jpg" alt="">
+                </a>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="abstract.html">
+                    <img class="gallery" src="images/abs_02.jpg" alt="">
+                </a>
+            </figure>
+        </div>
+        <div class="column is-4 p-0 m-0">
+            <figure class="image is-5by4 is-fullwidth">
+                <a href="abstract.html">
+                    <img class="gallery" src="images/abs_03.jpg" alt="">
+                </a>
+            </figure>
         </div>
     </div>
-</section>
 
-<!-- Footer ->
-    <footer class="container-fluid footer mx-auto p-0">
-      <Copyright>
-        <div class="row mb-2">
-            <div class="col-md-6 text-center text-md-start my-2 p-0">
-                <a href="https://www.linkedin.com/in/robrp/" target="_blank" class="pe-3">
-                    <i class="fa-brands fa-linkedin some-icons"></i>
-                </a>
-                <a href="https://www.artstation.com/idtobe" target="_blank" class="px-3">
-                    <i class="fa-brands fa-artstation some-icons"></i>
-                </a>
-                <a href="https://www.behance.net/RobertoRP" target="_blank" class="px-3">
-                    <i class="fa-brands fa-behance some-icons"></i>
-                </a>
-                <a href="https://www.instagram.com/otrebor_rp/" target="_blank" class="px-3">
-                    <i class="fa-brands fa-instagram some-icons"></i>
-                </a>
-                <!-- Vimeo
-                <a href="https://vimeo.com/idtobe" target="_blank" class="ps-3">
-                    <i class="fa-brands fa-vimeo-v some-icons"></i>
-                </a->
-            </div>
-            <div class="col-md-6 text-center text-md-end my-2 p-0">
-                © 2023 Roberto Reyes
+<!-- Footer -->
+    <footer class="footer mx-auto p-0">
+        <div class="container">
+            <div class="columns is-vcentered mx-0 my-auto p-0 pt-5">
+                <div class="column m-0 p-0 is-6 has-text-centered">
+                    <a href="https://www.linkedin.com/in/robrp/" target="_blank" class="p-0 pr-3">
+                        <i class="fa-brands fa-linkedin some-icons"></i>
+                    </a>
+                    <a href="https://www.artstation.com/idtobe" target="_blank" class="p-0 px-3">
+                        <i class="fa-brands fa-artstation some-icons"></i>
+                    </a>
+                    <a href="https://www.behance.net/RobertoRP" target="_blank" class="p-0 px-3">
+                        <i class="fa-brands fa-behance some-icons"></i>
+                    </a>
+                    <a href="https://www.instagram.com/otrebor_rp/" target="_blank" class="p-0 pl-3">
+                        <i class="fa-brands fa-instagram some-icons"></i>
+                    </a>
+                    <!-- Vimeo
+                    <a href="https://vimeo.com/idtobe" target="_blank" class="ps-3">
+                        <i class="fa-brands fa-vimeo-v some-icons"></i>
+                    </a-->
+                </div>
+                <div class="column m-0 p-0 is-6 has-text-centered">
+                    idtobe@gmail.com
+                </div>
             </div>
         </div>
-    </footer-->
+    </footer>
 
 
     <!-- Fontawesome JS -->
     <script src="https://kit.fontawesome.com/082d925258.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script>
+        const burger = document.querySelector("#burger");
+        const menu = document.querySelector("#modalMenu");
+        const closeMod = document.querySelector("#bgClose")
+        const closeButton = document.querySelector("#closeBtn");
+
+        burger.addEventListener("click", () => {
+            menu.classList.add("is-active");
+        })
+
+        closeButton.addEventListener("click", () => {
+            menu.classList.remove("is-active");
+        })
+
+        closeMod.addEventListener("click", () => {
+            menu.classList.remove("is-active");
+        })
+    </script>
 
 </body>
 </html>
