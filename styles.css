@@ -54,6 +54,18 @@ body {
     height: 35vh;
 }
 
+#movie {
+    width: 100vw;
+    height: 65vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 @media screen and (max-width: 600px) {
     #mainHero {
         height: 100vh;
@@ -62,6 +74,16 @@ body {
     #subHero {
         height: 20vh;
     }
+
+    #movie {
+        height: 100vh;
+    }
+
+    .modal-close {
+        top: 10px;
+        right: 25px;
+    }   
+
 }
 
 .introTitle {
@@ -153,77 +175,3 @@ body {
 .certImg {
     max-height: 120px;
 }
-
-/*
-.caption {
-    position: absolute;
-    top: 92%;
-    color: #eaeaea;
-    font-size: 1.2rem;
-}
-
-
-@media screen and (max-width: 991px) {
-    .caption {
-        position: absolute;
-        top: 80%;
-    }
-}
-
-
-
-
-
-
-
-
-
-.cat a {
-    /*font-size: 0.8rem;
-    color: black;
-}
-
-
-
-.menu-cat {
-    height: 40px;
-}
-
-.toolClass {
-    height: 30px;
-}
-
-.tools-text {
-    line-height: 1.6;
-    font-family: "Assistant", sans-serif;
-}
-
-.mainAb {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.tools-text ul {
-    list-style-type: none;
-}
-
-.cert-text {
-    font-size: .7rem;
-}
-
-
-.certImgBig {
-    height: 75px;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75vw;
-    font-size: 0.75rem;
-}*/
-
