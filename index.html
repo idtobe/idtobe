@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow: hidden;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Rubik:wght@600&display=swap" rel="stylesheet">
     
-    <!-- Bulma CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles.css">
@@ -20,206 +20,71 @@
 </head>
 <body>
 
-    <nav class="navbar is-transparent px-5" role="navigation" aria-label="main navigation">
-        <div class="navBrand is-flex is-justify-content-space-between is-align-items-center">
-            <a class="navbar-item pl-0" href="index.html">
-                <img src="images/logoIcon.png" class="has-ratio is-1by1">
-            </a>
-            <button class="button is-ghost is-large is-responsive is-inline" id="burger">
-                <span class="icon is-large">
-                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                </span>
-            </button>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+            <span>
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="archviz.html">Archviz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="id.html">Product Shots</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="abstract.html">Diverse</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </div>
+          </div>
         </div>
-    </nav>
-
-    <div id="modalMenu" class="modal">
-        <div id="bgClose" class="modal-background"></div>
-        <div class="modal-content has-text-centered">
-            <ul>
-                <li>
-                    <a class="navItem" href="archviz.html">Archviz</a>
-                </li>
-                <li>
-                    <a class="navItem" href="id.html">Product Shots</a>
-                </li>
-                <li>
-                    <a class="navItem" href="env.html">Environments</a>
-                </li>
-                <li>
-                    <a class="navItem" href="abstract.html">Diverse</a>
-                </li>
-            </ul>
-            <hr>
-            <ul>
-                <li>
-                    <a class="navItem" href="about.html">About</a>
-                </li>
-                <li>
-                    <a class="navItem" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <button id="closeBtn" class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    <!-- Hero -->
-    <section class="hero" id="mainHero">
-        <div class="hero-body m-0 p-0">
-            <video autoplay muted loop class="is-fullwidth" id="movie">
-                <source src="images/FogForest_vimeo.mov" type="video/mp4">
-            </video>
-        </div>
-    </section>
+      </nav>
 
     <!-- Title -->
-    <section class="introTitle is-flex is-align-items-center is-justify-content-center ">
+    <section class="introTitle">
         <div>
-            <p class="has-text-centered is-size-4-touch is-size-3-desktop">Roberto Reyes - CGI Artist</p>
-            <p class="prof has-text-centered is-size-5">Archviz, Product Shots, Graphics and XR</p>
+            <p class="fs-4 text-center">Roberto Reyes - CGI Artist</p>
+            <p class="prof fs-5 text-center">Visualizations, 3D images and animations</p>
         </div>
     </section>
 
-    <!-- Gallery -->
-    <div class="columns is-mobile m-0 p-0 is-multiline">
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="archviz.html">
-                    <img class="gallery" src="images/archviz_01.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="archviz.html">
-                    <img class="gallery" src="images/archviz_02.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="archviz.html">
-                    <img class="gallery" src="images/archviz_03.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="id.html">
-                    <img class="gallery" src="images/id_01.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="id.html">
-                    <img class="gallery" src="images/id_03.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="id.html">
-                    <img class="gallery" src="images/id_07.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="env.html">
-                    <img class="gallery" src="images/env_01.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="env.html">
-                    <img class="gallery" src="images/env_02.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="env.html">
-                    <img class="gallery" src="images/env_03.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="abstract.html">
-                    <img class="gallery" src="images/abs_01.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="abstract.html">
-                    <img class="gallery" src="images/abs_02.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="abstract.html">
-                    <img class="gallery" src="images/abs_03.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-    </div>
-
-<!-- Footer -->
-    <footer class="footer mx-auto p-0">
-        <div class="container">
-            <div class="columns is-vcentered mx-0 my-auto p-0 pt-3">
-                <div class="column m-0 p-0 is-6 has-text-centered">
-                    <a href="https://www.linkedin.com/in/robrp/" target="_blank" class="p-0 pr-3">
-                        <i class="fa-brands fa-linkedin some-icons"></i>
-                    </a>
-                    <a href="https://www.artstation.com/idtobe" target="_blank" class="p-0 px-3">
-                        <i class="fa-brands fa-artstation some-icons"></i>
-                    </a>
-                    <a href="https://www.behance.net/RobertoRP" target="_blank" class="p-0 px-3">
-                        <i class="fa-brands fa-behance some-icons"></i>
-                    </a>
-                    <a href="https://www.instagram.com/otrebor_rp/" target="_blank" class="p-0 pl-3">
-                        <i class="fa-brands fa-instagram some-icons"></i>
-                    </a>
-                    <!-- Vimeo
-                    <a href="https://vimeo.com/idtobe" target="_blank" class="ps-3">
-                        <i class="fa-brands fa-vimeo-v some-icons"></i>
-                    </a-->
-                </div>
-                <div class="column m-0 p-0 pt-3 is-6 has-text-centered">
-                    idtobe@gmail.com
-                </div>
+    <!-- Carousel -->
+    <section class="container-xl my-0 mx-auto p-0 g-0">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+            <div class="carousel-inner">
+                <a href="archviz.html" class="carousel-item active slide slide-1"></a>
+                <a href="archviz.html" class="carousel-item slide slide-2"></a>
+                <a href="archviz.html" class="carousel-item slide slide-3"></a>
+                <a href="env.html" class="carousel-item slide slide-4"></a>
+                <a href="env.html" class="carousel-item slide slide-5"></a>
+                <a href="id.html" class="carousel-item slide slide-6"></a>
             </div>
         </div>
-    </footer>
-
+    </section>
 
     <!-- Fontawesome JS -->
     <script src="https://kit.fontawesome.com/082d925258.js" crossorigin="anonymous"></script>
 
-    <!-- Custom JS -->
-    <script>
-        const burger = document.querySelector("#burger");
-        const menu = document.querySelector("#modalMenu");
-        const closeMod = document.querySelector("#bgClose")
-        const closeButton = document.querySelector("#closeBtn");
-
-        burger.addEventListener("click", () => {
-            menu.classList.add("is-active");
-        })
-
-        closeButton.addEventListener("click", () => {
-            menu.classList.remove("is-active");
-        })
-
-        closeMod.addEventListener("click", () => {
-            menu.classList.remove("is-active");
-        })
-    </script>
-
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
 </body>
 </html>
