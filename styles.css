@@ -19,32 +19,13 @@ body {
     background-color: #2c2c2c;
 }
 
-.is-transparent {
-    width: 100%;
-    position: absolute;
-    background: none;
-}
-
-.navBrand {
-    width: 100%;
-}
-
-.navItem {
-    font-size: 20px;
+.nav-item {
+    font-size: 15px;
     color: white;
 }
 
-.navItem:hover {
+.nav-link:hover {
     color: #0d6efd;
-}
-
-.modal-background {
-    background-color: #2c2c2c;
-}
-
-.modal-close {
-    top: 15px;
-    right: 38px;
 }
 
 .main {
@@ -53,30 +34,29 @@ body {
 }
 
 .slide-1 {
-    background: url('images/archviz_01.jpg');
-    background-position-y: 85%;
-}
-
-.slide-2 {
-    background: url('images/archviz_02.jpg');
-    background-position-y: 80%;
-}
-
-.slide-3 {
     background: url('images/archviz_03.jpg');
     background-position-y: 80%;
 }
 
+.slide-2 {
+    background: url('images/archviz_02.jpg');
+}
+
+.slide-3 {
+    background: url('images/abs_03.jpg');
+    background-position-y: 45%;
+}
+
 .slide-4 {
-    background: url('images/env_01.jpg');
+    background: url('images/abs_06.jpg');
 }
 
 .slide-5 {
-    background: url('images/env_03.jpg');
+    background: url('images/id_08.jpg');
 }
 
 .slide-6 {
-    background: url('images/id_04.jpg');
+    background: url('images/abs_01.jpg');
 }
 
 .slide {
@@ -88,54 +68,11 @@ body {
     overflow-x: hidden;
 }
 
-#movie {
-    width: 100vw;
-    height: 65vh;
-    object-fit: cover;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-@media screen and (max-width: 600px) {
-    #mainHero {
-        height: 100vh;
-    }
-
-    #subHero {
-        height: 20vh;
-    }
-
-    #movie {
-        height: 100vh;
-    }
-
-    .modal-close {
-        top: 10px;
-        right: 25px;
-    }
-
-    .slide {
-        height: 80vh;
-    }
-
-}
-
 .introTitle {
-    height: 15vh;
-    margin: 20px auto;
+    height: 10vh;
+    margin-top: 20px;
     color: white;
     line-height: 1.5rem;
-}
-
-.introTitleSecondary {
-    height: 20vh;
-    margin: 20px auto;
-    color: white;
-    line-height: 2.5rem;
 }
 
 .introTitleAbout {
@@ -150,7 +87,13 @@ body {
 }
 
 .gallery {
-    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+figure {
+    margin: 0 !important;
 }
 
 .footer {
@@ -179,37 +122,9 @@ body {
     transform: scale(1.35);
 }
 
-.archviz {
-    background-image: url(images/archviz_02.jpg);
-    background-position-y: 50%;
-    background-size: cover;
-}
-
-.prod {
-    background-image: url(images/id_04.jpg);
-    background-position: 50%;
-    background-size: cover;
-}
-
-.env {
-    background-image: url(images/env_01.jpg);
-    background-position: 50%;
-    background-size: cover;
-}
-
-.diverse {
-    background-image: url(images/abs_05.jpg);
-    background-position: 47%;
-    background-size: cover;
-}
-
-.tile {
-    background-color: #0d6efd;
-    border: 1px solid white;
-}
-
 .infoAbout {
     font-family: 'Assistant', sans-serif;
+    text-align: justify;
 }
 
 .toolTitle {
@@ -218,4 +133,14 @@ body {
 
 .certImg {
     max-height: 120px;
+}
+
+@media screen and (max-width: 990px) {
+    .slide {
+        height: 80vh;
+    }
+
+    .infoAbout {
+        text-align: center;
+    }
 }

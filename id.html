@@ -10,8 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Rubik:wght@600&display=swap" rel="stylesheet">
     
-    <!-- Bulma CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="lightbox.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles.css">
@@ -20,171 +23,127 @@
 </head>
 <body>
 
-    <nav class="navbar is-transparent px-5" role="navigation" aria-label="main navigation">
-        <div class="navBrand is-flex is-justify-content-space-between is-align-items-center">
-            <a class="navbar-item pl-0" href="index.html"></a>
-            <button class="button is-ghost is-large is-responsive is-inline" id="burger">
-                <span class="icon is-large">
-                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                </span>
-            </button>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+            <span>
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-1">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="archviz.html">Architecture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="id.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="abstract.html">Diverse</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </div>
+          </div>
         </div>
-    </nav>
-
-    <div id="modalMenu" class="modal">
-        <div id="bgClose" class="modal-background"></div>
-        <div class="modal-content has-text-centered">
-            <ul>
-                <li>
-                    <a class="navItem" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a class="navItem" href="archviz.html">Archviz</a>
-                </li>
-                <li>
-                    <a class="navItem" href="id.html">Product Shots</a>
-                </li>
-                <li>
-                    <a class="navItem" href="env.html">Environments</a>
-                </li>
-                <li>
-                    <a class="navItem" href="abstract.html">Diverse</a>
-                </li>
-            </ul>
-            <hr>
-            <ul>
-                <li>
-                    <a class="navItem" href="about.html">About</a>
-                </li>
-                <li>
-                    <a class="navItem" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <button id="closeBtn" class="modal-close is-large" aria-label="close"></button>
-    </div>
+      </nav>
 
     <!-- Title -->
-    <section class="introTitleSecondary is-flex is-align-items-center is-justify-content-center ">
+    <section class="introTitle">
         <div>
-            <p class="has-text-centered is-size-4-touch is-size-3-desktop">Product Shots</p>
-            <p class="prof has-text-centered is-size-5">Animations and stills</p>
+            <p class="fs-4 text-center">Products</p>
+            <p class="prof fs-5 text-center">3D renders and animations</p>
         </div>
     </section>
 
     <!-- Gallery -->
-    <div class="columns is-mobile m-0 p-0 is-multiline">
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="images/id_01.jpg">
-                    <img class="gallery" src="images/id_01.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="images/id_02.jpg">
-                    <img class="gallery" src="images/id_02.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="images/id_03.jpg">
-                    <img class="gallery" src="images/id_03.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="images/id_04.jpg">
-                    <img class="gallery" src="images/id_04.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="images/id_05.jpg">
-                    <img class="gallery" src="images/id_05.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="images/id_06.jpg">
-                    <img class="gallery" src="images/id_06.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="images/id_07.jpg">
-                    <img class="gallery" src="images/id_07.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="images/id_08.jpg">
-                    <img class="gallery" src="images/id_08.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-        <div class="column is-4 p-0 m-0">
-            <figure class="image is-5by4 is-fullwidth">
-                <a href="images/id_09.jpg">
-                    <img class="gallery" src="images/id_09.jpg" alt="">
-                </a>
-            </figure>
-        </div>
-    </div>
-
-<!-- Footer ->
-    <footer class="footer mx-auto p-0">
-        <div class="container">
-            <div class="columns is-vcentered mx-0 my-auto p-0 pt-3">
-                <div class="column m-0 p-0 is-6 has-text-centered">
-                    <a href="https://www.linkedin.com/in/robrp/" target="_blank" class="p-0 pr-3">
-                        <i class="fa-brands fa-linkedin some-icons"></i>
+    <section class="container-fluid p-0">
+        <div class="row m-0 p-0 g-0">
+            <div class="col-4">
+                <figure class="ratio ratio-1x1">
+                    <a href="images/id_01.jpg" data-lightbox="id-img">
+                        <img class="gallery m-0" src="images/id_01.jpg" alt="">
                     </a>
-                    <a href="https://www.artstation.com/idtobe" target="_blank" class="p-0 px-3">
-                        <i class="fa-brands fa-artstation some-icons"></i>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure class="ratio ratio-1x1">
+                    <a href="images/id_02.jpg" data-lightbox="id-img">
+                        <img class="gallery m-0" src="images/id_02.jpg" alt="">
                     </a>
-                    <a href="https://www.behance.net/RobertoRP" target="_blank" class="p-0 px-3">
-                        <i class="fa-brands fa-behance some-icons"></i>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure class="ratio ratio-1x1">
+                    <a href="images/id_03.jpg" data-lightbox="id-img">
+                        <img class="gallery m-0" src="images/id_03.jpg" alt="">
                     </a>
-                    <a href="https://www.instagram.com/otrebor_rp/" target="_blank" class="p-0 pl-3">
-                        <i class="fa-brands fa-instagram some-icons"></i>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure class="ratio ratio-1x1">
+                    <a href="images/id_04.jpg" data-lightbox="id-img">
+                        <img class="gallery m-0" src="images/id_04.jpg" alt="">
                     </a>
-                </div>
-                <div class="column m-0 p-0 pt-3 is-6 has-text-centered">
-                    idtobe@gmail.com
-                </div>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure class="ratio ratio-1x1">
+                    <a href="images/id_05.jpg" data-lightbox="id-img">
+                        <img class="gallery m-0" src="images/id_05.jpg" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure class="ratio ratio-1x1">
+                    <a href="images/id_06.jpg" data-lightbox="id-img">
+                        <img class="gallery m-0" src="images/id_06.jpg" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure class="ratio ratio-1x1">
+                    <a href="images/id_07.jpg" data-lightbox="id-img">
+                        <img class="gallery m-0" src="images/id_07.jpg" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure class="ratio ratio-1x1">
+                    <a href="images/id_08.jpg" data-lightbox="id-img">
+                        <img class="gallery m-0" src="images/id_08.jpg" alt="">
+                    </a>
+                </figure>
             </div>
         </div>
-    </footer>
-
+    </section>
 
     <!-- Fontawesome JS -->
     <script src="https://kit.fontawesome.com/082d925258.js" crossorigin="anonymous"></script>
 
-    <!-- Custom JS -->
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- Lightbox JS-->
+    <script src="lightbox-plus-jquery.js"></script>
+
     <script>
-        const burger = document.querySelector("#burger");
-        const menu = document.querySelector("#modalMenu");
-        const closeMod = document.querySelector("#bgClose")
-        const closeButton = document.querySelector("#closeBtn");
-
-        burger.addEventListener("click", () => {
-            menu.classList.add("is-active");
-        })
-
-        closeButton.addEventListener("click", () => {
-            menu.classList.remove("is-active");
-        })
-
-        closeMod.addEventListener("click", () => {
-            menu.classList.remove("is-active");
+        lightbox.option({
+            'fitImagesInViewport': true,
+            'showImageNumberLabel': false
         })
     </script>
 
