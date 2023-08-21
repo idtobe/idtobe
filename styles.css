@@ -69,18 +69,18 @@ padding-right: 20px;
 }
 
 .slide-4 {
-    background: url('images/abs_06.jpg');
+    background: url('images/abs_02.jpg');
     background-position-y: 45%;
 }
 
 .slide-5 {
-    background: url('images/id_08.jpg');
+    background: url('images/id_06.jpg');
     background-position: center;
 }
 
 .slide-6 {
-    background: url('images/abs_01.jpg');
-    background-position-x: 18%;
+    background: url('images/archviz_04.jpg');
+    background-position: center;
 }
 
 .slide {
