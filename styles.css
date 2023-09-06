@@ -42,12 +42,6 @@ body {
     position: relative;
 }
 
-@media only screen and (max-width: 600px) {
-    #main {
-      min-height: 87%;
-    }
-  }
-
 #footer {
     margin-top: auto;
     width: 100%;
