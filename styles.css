@@ -65,6 +65,23 @@ body {
     height: 100px;
 }
 
+.titles {
+    font-size: 20px;
+}
+
+.captions {
+    left: 1vw;
+    top: 98%;
+    font-size: 16px;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .captions {
+      font-size: 12px;
+    }
+  }
+
 .sub1 {
     padding: 0 8vw;
     font-weight: 400;
