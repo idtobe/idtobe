@@ -57,12 +57,23 @@ body {
 
 .header {
     width: 100%;
-    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
 }
 
 .headerSm {
     width: 100%;
-    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.headAbout {
+    height: 200px;
+}
+
+.intro {
+    padding-bottom: .1rem;
 }
 
 .titles {
