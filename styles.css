@@ -162,10 +162,25 @@ body {
 
     .intro {
         padding: 60px 9.5vw;
+    }
+
+    .intro p {
         font-size: 15px;
+        line-height: 1.6rem;
     }
 
     .sub {
         padding: 0 9.5vw;
     }
   }
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .intro {
+        padding: 60px 2vw;
+    }
+
+    .intro p {
+        font-size: 15px;
+        line-height: 1.6rem;
+    }
+}
