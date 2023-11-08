@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html {
@@ -19,7 +20,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
     letter-spacing: normal;
     color: #000000;
     background-color: #e9ecf1;
@@ -32,20 +32,21 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
     letter-spacing: normal;
 }
 
+#name {
+    font-size: 20px;
+}
+
 #main {
-    min-height: 85%;
-    display: flex;
-    flex-direction: column;
+    min-height: 92%;
     flex-grow: 1;
 }
 
 #footer {
     width: 100%;
-    height: 150px;
+    height: 115px;
     padding: 20px;
     bottom: 0;
     background-color: #000000;
@@ -56,19 +57,52 @@ body {
 
 .header {
     width: 100%;
-    height: 100px;
+    height: 80px;
+    padding: 0 3vw;
     color: #ffffff;
     background-color: #000000;
 }
 
+.header a, .header i {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-item {
+    font-size: 18px;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #707070;
+}
+
+.sublist {
+    padding-left: 1.5vw;
+    font-size: 16px;
+}
 
 .intro {
-    padding: 40px 10vw;
+    padding: 40px 0;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.7rem;
     text-align: justify;
     color: #000000;
+}
+
+.gallery {
+    padding: 0 2vw;
+}
+
+.gallcol {
+    padding: 0 1vw 0 1vw;
+}
+
+.imgs {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
 }
 
 .spacer {
@@ -81,39 +115,12 @@ body {
 }
 
 .titleAbout {
-    padding: 40px 10vw 10px 10vw;
     font-size: 16px;
 }
 
 .figure-caption {
     font-size: 14px;
     color: #000000;
-}
-
-.sub {
-    padding: 0 3vw;
-}
-
-.sub a, .sub i {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#name {
-    font-size: 20px;
-}
-
-.nav-item {
-    font-size: 18px;
-    color: white;
-}
-
-.nav-link:hover {
-    color: #0d6efd;
-}
-
-#footer a {
-    text-decoration: none;
 }
 
 .fa-brands {
@@ -127,20 +134,8 @@ body {
     color: white;
 }
 
-.gallery {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-}
-
 .contactInfo {
     width: 50vw;
-}
-
-.infoAbout {
-    padding: 0 1vw 1vw 1vw;
-    font-weight: 300;
-    text-align: center;
 }
 
 .certImg {
@@ -152,21 +147,38 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .figure-caption {
-      font-size: 13px;
+    .header {
+        height: 100px;
+        padding: 0 10vw;
     }
 
-    .spacer {
-        height: 0px;
+    .sublist {
+        padding-left: 6vw;
     }
 
+    .gallery {
+        padding: 0 9vw;
+    }
+    
+    .gallcol {
+        padding: 0 1vw 0 1vw;
+    }
+    
     .intro {
-        padding: 60px 9.5vw;
+        padding: 60px 10vw;
     }
 
     .intro p {
         font-size: 15px;
         line-height: 1.6rem;
+    }
+
+    .figure-caption {
+      font-size: 13px;
+    }
+
+    .spacer {
+        display: none;
     }
 
     .sub {
@@ -175,8 +187,25 @@ body {
   }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .header {
+        height: 100px;
+        padding: 0 6vw;
+    }
+
+    .sublist {
+        padding-left: 3vw;
+    }
+
+    .gallery {
+        padding: 0 4vw;
+    }
+    
+    .gallcol {
+        padding: 0 2vw;
+    }
+
     .intro {
-        padding: 60px 2vw;
+        padding: 60px 6vw;
     }
 
     .intro p {

@@ -26,55 +26,17 @@
 
 <section id="main">
   
-  <!-- Header LG -->
-  <div class="header d-none d-md-flex align-items-center font2">
-    <div class="sub w-100">
+  <!-- Header -->
+  <div class="header d-flex align-items-center font2">
+    <div class="w-100">
       <div class="row align-items-center g-0">
-        <div class="col-4 p-0">
-          <div class="p-0 d-inline">
-            <a href="about.html">About</a>
-          </div>
-          <div class="p-0 ps-3 d-inline">
-            <a href="contact.html">Contact</a>
-          </div>
-        </div>
-        <div class="col-4 p-0 text-center">
+        <div class="col-10">
           <a href="index.html" id="name">Roberto Reyes</a>
         </div>
-        <div class="col-4 text-end">
-          <div class="d-inline">
-            <a href="https://www.linkedin.com/in/robrp/" target="_blank" class="px-2">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-          <div class="d-inline">
-            <a href="https://www.artstation.com/idtobe" target="_blank" class="px-2">
-              <i class="fa-brands fa-artstation"></i>
-            </a>
-          </div>
-          <div class="d-inline">
-            <a href="https://www.behance.net/RobertoRP" target="_blank" class="ps-2">
-              <i class="fa-brands fa-behance"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Header SM -->
-  <div class="header d-md-none d-flex align-items-center font2">
-    <div class="sub w-100">
-      <div class="row align-items-center g-0">
-        <div class="col-10 p-0">
-          <a href="index.html" id="name">Roberto Reyes</a>
-        </div>
-        <div class="col-2 p-0 text-end">
+        <div class="col-2 text-end">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
             <span>
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <style>svg{fill:#ffffff}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+              <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </span>
           </button>
         </div>
@@ -88,13 +50,28 @@
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-1">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Work</a>
+            <ul class="navbar-nav sublist">
+              <li>
+                <a class="nav-link" href="archviz.html">Architectural Visualizations</a>
+              </li>
+              <li>
+                <a class="nav-link" href="id.html">Product Shots</a>
+              </li>
+              <li>
+                <a class="nav-link" href="abstract.html">Diverse</a>
+              </li>
+              <li>
+                <a class="nav-link" href="anim.html">Animations</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -102,48 +79,48 @@
   <div class="w-100 text-center titles font2">Diverse Projects</div>
 
   <!-- Gallery -->
-  <div class="d-flex align-items-start">
-    <div class="sub w-100">
-      <div class="row g-0 sub2">
-        <div class="col-lg-3 col-md-6 col-12 mb-2 m-md-0 p-2 pb-md-5">
+  <div class="d-flex gallery">
+    <div class="w-100">
+      <div class="row g-0">
+        <div class="col-lg-3 col-md-6 col-12 mb-5 m-md-0 pb-md-5 gallcol">
           <figure class="figure ratio ratio-1x1">
             <a href="images/abs_03.jpg" data-lightbox="abstract-img">
-              <img class="gallery" src="images/abs_03.jpg" alt="">
+              <img class="imgs" src="images/abs_03.jpg" alt="">
             </a>
           </figure>
         </div>
-        <div class="col-lg-3 col-md-6 col-12 mb-2 m-md-0 p-2 pb-md-5">
+        <div class="col-lg-3 col-md-6 col-12 mb-5 m-md-0 pb-md-5 gallcol">
           <figure class="figure ratio ratio-1x1">
             <a href="images/abs_02.jpg" data-lightbox="abstract-img">
-              <img class="gallery" src="images/abs_02.jpg" alt="">
+              <img class="imgs" src="images/abs_02.jpg" alt="">
             </a>
           </figure>
         </div>
-        <div class="col-lg-3 col-md-6 col-12 mb-2 m-md-0 p-2 pb-md-5">
+        <div class="col-lg-3 col-md-6 col-12 mb-5 m-md-0 pb-md-5 gallcol">
           <figure class="figure ratio ratio-1x1">
             <a href="images/abs_01.jpg" data-lightbox="abstract-img">
-              <img class="gallery" src="images/abs_01.jpg" alt="">
+              <img class="imgs" src="images/abs_01.jpg" alt="">
             </a>
           </figure>
         </div>
-        <div class="col-lg-3 col-md-6 col-12 mb-2 m-md-0 p-2 pb-md-5">
+        <div class="col-lg-3 col-md-6 col-12 mb-5 m-md-0 pb-md-5 gallcol">
           <figure class="figure ratio ratio-1x1">
             <a href="images/abs_04.jpg" data-lightbox="abstract-img">
-              <img class="gallery" src="images/abs_04.jpg" alt="">
+              <img class="imgs" src="images/abs_04.jpg" alt="">
             </a>
           </figure>
         </div>
-        <div class="col-lg-3 col-md-6 col-12 mb-2 m-md-0 p-2 pb-md-5">
+        <div class="col-lg-3 col-md-6 col-12 mb-5 m-md-0 pb-md-5 gallcol">
           <figure class="figure ratio ratio-1x1">
             <a href="images/abs_05.jpg" data-lightbox="abstract-img">
-              <img class="gallery" src="images/abs_05.jpg" alt="">
+              <img class="imgs" src="images/abs_05.jpg" alt="">
             </a>
           </figure>
         </div>
-        <div class="col-lg-3 col-md-6 col-12 mb-2 m-md-0 p-2 pb-md-5">
+        <div class="col-lg-3 col-md-6 col-12 mb-5 m-md-0 pb-md-5 gallcol">
           <figure class="figure ratio ratio-1x1">
             <a href="images/abs_07.jpg" data-lightbox="abstract-img">
-              <img class="gallery" src="images/abs_07.jpg" alt="">
+              <img class="imgs" src="images/abs_07.jpg" alt="">
             </a>
           </figure>
         </div>
@@ -194,14 +171,14 @@
             'showImageNumberLabel': false
       })
 
-      function setDocHeight() {
+      /*function setDocHeight() {
         document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
       };
 
       window.addEventListener('resize', setDocHeight);
       window.addEventListener('orientationchange', setDocHeight);
 
-      setDocHeight();
+      setDocHeight();*/
     </script>
 
 </body>
