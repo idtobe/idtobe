@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./styles.css">
 
     <title>Roberto Reyes</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
 
@@ -27,7 +28,7 @@
   
   <!-- Header LG -->
   <div class="header d-none d-md-flex align-items-center font2">
-    <div class="sub1 w-100">
+    <div class="sub w-100">
       <div class="row align-items-center g-0">
         <div class="col-4 p-0">
           <div class="p-0 d-inline">
@@ -62,8 +63,8 @@
   </div>
   
   <!-- Header SM -->
-  <div class="headerSm d-md-none d-flex align-items-center font2">
-    <div class="sub1 w-100">
+  <div class="header d-md-none d-flex align-items-center font2">
+    <div class="sub w-100">
       <div class="row align-items-center g-0">
         <div class="col-10 p-0">
           <a href="index.html" id="name">Roberto Reyes</a>
@@ -101,8 +102,8 @@
   <div class="w-100 text-center titles font2">Diverse Projects</div>
 
   <!-- Gallery -->
-  <div class="imgs d-flex align-items-start">
-    <div class="sub1 w-100">
+  <div class="d-flex align-items-start">
+    <div class="sub w-100">
       <div class="row g-0 sub2">
         <div class="col-lg-3 col-md-6 col-12 mb-2 m-md-0 p-2 pb-md-5">
           <figure class="figure ratio ratio-1x1">
@@ -141,13 +142,6 @@
         </div>
         <div class="col-lg-3 col-md-6 col-12 mb-2 m-md-0 p-2 pb-md-5">
           <figure class="figure ratio ratio-1x1">
-            <a href="images/abs_06.jpg" data-lightbox="abstract-img">
-              <img class="gallery" src="images/abs_06.jpg" alt="">
-            </a>
-          </figure>
-        </div>
-        <div class="col-lg-3 col-md-6 col-12 mb-2 m-md-0 p-2 pb-md-5">
-          <figure class="figure ratio ratio-1x1">
             <a href="images/abs_07.jpg" data-lightbox="abstract-img">
               <img class="gallery" src="images/abs_07.jpg" alt="">
             </a>
@@ -163,25 +157,25 @@
 <!-- Footer -->
 <footer id="footer" class="mx-auto p-0 d-flex align-items-center">
   <div class="container">
-      <div class="row text-center">
-        <div class="col col-md-6 mb-3 m-md-0 d-flex align-items-center justify-content-center">
-              <a href="https://www.linkedin.com/in/robrp/" target="_blank" class="px-2">
-                  <i class="fa-brands fa-linkedin some-icons"></i>
-              </a>
-              <a href="https://www.artstation.com/idtobe" target="_blank" class="px-2">
-                  <i class="fa-brands fa-artstation some-icons"></i>
-              </a>
-              <a href="https://www.behance.net/RobertoRP" target="_blank" class="px-2">
-                  <i class="fa-brands fa-behance some-icons"></i>
-              </a>
-              <a href="https://www.instagram.com/otrebor_rp/" target="_blank" class="px-2">
-                  <i class="fa-brands fa-instagram some-icons"></i>
-              </a>
-          </div>
-          <div class="col col-md-6 text-center">
-              idtobe@gmail.com
-          </div>
+    <div class="row text-center">
+      <div class="col col-md-6 d-flex align-items-center justify-content-center">
+        <a href="https://www.linkedin.com/in/robrp/" target="_blank" class="px-2">
+          <i class="fa-brands fa-linkedin some-icons"></i>
+        </a>
+        <a href="https://www.artstation.com/idtobe" target="_blank" class="px-2">
+          <i class="fa-brands fa-artstation some-icons"></i>
+        </a>
+        <a href="https://www.behance.net/RobertoRP" target="_blank" class="px-2">
+          <i class="fa-brands fa-behance some-icons"></i>
+        </a>
+        <a href="https://www.instagram.com/otrebor_rp/" target="_blank" class="px-2">
+          <i class="fa-brands fa-instagram some-icons"></i>
+        </a>
       </div>
+      <div class="col col-md-6 text-center order-first order-md-last mb-4 m-md-0">
+        idtobe@gmail.com
+      </div>
+    </div>
   </div>
 </footer>
 
@@ -195,10 +189,19 @@
     <script src="lightbox-plus-jquery.js"></script>
 
     <script>
-        lightbox.option({
+      lightbox.option({
             'fitImagesInViewport': true,
             'showImageNumberLabel': false
-        })
+      })
+
+      function setDocHeight() {
+        document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
+      };
+
+      window.addEventListener('resize', setDocHeight);
+      window.addEventListener('orientationchange', setDocHeight);
+
+      setDocHeight();
     </script>
 
 </body>
