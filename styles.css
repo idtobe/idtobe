@@ -19,10 +19,13 @@ body {
     height: -webkit-fill-available;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    font-weight: 300;
     font-style: normal;
     letter-spacing: normal;
+    line-height: 1.7rem;
+    text-align: justify;
     color: #000000;
-    background-color: #e9ecf1;
+    background-color: #fff;
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -36,41 +39,32 @@ body {
 }
 
 #name {
-    font-size: 20px;
-}
-
-#main {
-    min-height: 92%;
-    flex-grow: 1;
-}
-
-#footer {
-    width: 100%;
-    height: 115px;
-    padding: 20px;
-    bottom: 0;
-    background-color: #000000;
-    color: #fff;
-    font-size: 1.1rem;
-    letter-spacing: .5px;
+    font-size: 16pt;
 }
 
 .header {
-    width: 100%;
-    height: 80px;
+    width: 100vw;
+    margin: 3vh auto;
     padding: 0 3vw;
-    color: #ffffff;
-    background-color: #000000;
+    color: #333;
 }
 
-.header a, .header i {
-    text-decoration: none;
-    color: #ffffff;
+#name, .header i {
+    color: #333;
+}
+
+.header i {
+    padding-right: 3vw;
+    font-size: 16pt;
 }
 
 .nav-item {
     font-size: 18px;
     color: white;
+}
+
+.nav-link {
+    color: #fff;
 }
 
 .nav-link:hover {
@@ -83,20 +77,21 @@ body {
 }
 
 .intro {
-    padding: 40px 0;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.7rem;
-    text-align: justify;
-    color: #000000;
+    margin: 0 3vw 5vh 3vw;
+}
+
+.aboutTxt {
+    margin: 0 3vw 2vh 3vw;
 }
 
 .gallery {
-    padding: 0 2vw;
+    padding: 0 1.5vw;
 }
 
-.gallcol {
-    padding: 0 1vw 0 1vw;
+.b-both {
+    border-right: solid 1.5vw #fff;
+    border-left: solid 1.5vw #fff;
+    padding-bottom: 0.5vw;
 }
 
 .imgs {
@@ -105,12 +100,8 @@ body {
     object-fit: cover !important;
 }
 
-.spacer {
-    height: 50px;
-}
-
 .titles {
-    padding: 40px 10vw;
+    padding-bottom: 4vh;
     font-size: 16px;
 }
 
@@ -119,8 +110,9 @@ body {
 }
 
 .figure-caption {
-    font-size: 14px;
-    color: #000000;
+    padding-top: 10px;
+    font-size: 12pt;
+    color: #333;
 }
 
 .fa-brands {
@@ -131,7 +123,7 @@ body {
     margin: 0;
     padding: 0 10px;
     font-size: 1.5rem;
-    color: white;
+    color: #333;
 }
 
 .certImg {
@@ -144,68 +136,125 @@ body {
 
 @media only screen and (max-width: 600px) {
     .header {
-        height: 100px;
-        padding: 0 10vw;
+        margin: 3vh auto;
+        padding: 0 5vw;
+    }
+
+    #name, .header i {
+        font-size: 12pt;
+    }
+
+    .nav-item, .sublist {
+        font-size: 12pt;
     }
 
     .sublist {
         padding-left: 6vw;
     }
 
-    .gallery {
-        padding: 0 9vw;
-    }
-    
-    .gallcol {
-        padding: 0 1vw 0 1vw;
-    }
-    
     .intro {
-        padding: 60px 10vw;
+        margin: 0 0 5vh 0;
+    }
+    
+    .intro p {
+        padding: 0 5vw;
+        font-size: 11pt;
+        line-height: 1.5rem;
     }
 
-    .intro p {
-        font-size: 15px;
-        line-height: 1.6rem;
+    .aboutTxt {
+        margin: 0 5vw 2vh 5vw;
+    }
+
+    .gallery {
+        padding: 0 5vw;
+    }
+    
+    .b-both {
+        border: none;
+        border: none;
+        padding-bottom: 2vh;
     }
 
     .figure-caption {
-      font-size: 13px;
-    }
-
-    .spacer {
-        display: none;
-    }
-
-    .sub {
-        padding: 0 9.5vw;
+        height: 4vh;
+        top: -4vh;
+        position: relative;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12pt;
+        letter-spacing: .13rem ;
+        color:#fff;
+        background-color: rgba(33, 33, 33, .3);
+        text-align: center;
     }
   }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
     .header {
-        height: 100px;
-        padding: 0 6vw;
+        margin: 3vh auto;
+        padding: 0 4vw;
     }
 
+    .nav-item, .sublist {
+        font-size: 12pt;
+    }
+    
     .sublist {
-        padding-left: 3vw;
+        padding-left: 6vw;
+    }
+    
+    .intro {
+        margin: 0 0 4vh 0;
+    }
+    
+    .intro p {
+        padding: 0 5vw;
+        font-size: 11pt;
+        line-height: 1.5rem;
     }
 
     .gallery {
-        padding: 0 4vw;
-    }
-    
-    .gallcol {
         padding: 0 2vw;
     }
-
-    .intro {
-        padding: 60px 6vw;
+    
+    .b-both {
+        border-right: solid 2vw #fff;
+        border-left: solid 2vw #fff ;
+        padding-bottom: 2.2vh;
     }
 
-    .intro p {
-        font-size: 15px;
-        line-height: 1.6rem;
+    .figure-caption {
+        height: 4vh;
+        top: -4vh;
+        position: relative;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12pt;
+        letter-spacing: .13rem ;
+        color:#fff;
+        background-color: rgba(33, 33, 33, .3);
+        text-align: center;
     }
+}
+
+
+
+
+/*#main {
+   min-height: 92%;
+}
+
+#footer {
+    width: 100%;
+    margin: 3vw auto;
+    padding: 0 3vw;
+    bottom: 0;
+    color: #333;
+    font-size: 1.1rem;
+    letter-spacing: .5px;
 }
